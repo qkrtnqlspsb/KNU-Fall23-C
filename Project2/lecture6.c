@@ -21,10 +21,7 @@ int main(void)
 
 	printf("점수 등급 : %c학점\n", grade);
 
-<<<<<<< HEAD
-	return 0; 
-}
-=======
+
 	return 0;
 }
->>>>>>> 97190f2c6fa948d3c2fb61af3045a2c5ac2f3762
+
