@@ -5,7 +5,7 @@ int main(void)
 	int jumsu;
 	char grade;
 
-	printf("Á¡¼ö ÀÔ·Â :");
+	printf("ì ìˆ˜ ì…ë ¥ :");
 	scanf_s("%d", &jumsu);
 
 	if (jumsu >= 90)
@@ -19,7 +19,12 @@ int main(void)
 	else
 		grade = 'F';
 
-	printf("Á¡¼ö µî±Ş : %cÇĞÁ¡\n", grade);
+	printf("ì ìˆ˜ ë“±ê¸‰ : %cí•™ì \n", grade);
 
+<<<<<<< HEAD
 	return 0; 
 }
+=======
+	return 0;
+}
+>>>>>>> 97190f2c6fa948d3c2fb61af3045a2c5ac2f3762
