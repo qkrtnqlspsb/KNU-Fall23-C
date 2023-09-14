@@ -21,5 +21,5 @@ int main(void)
 
 	printf("점수 등급 : %c학점\n", grade);
 
-	return 0;
+	return 0; 
 }
