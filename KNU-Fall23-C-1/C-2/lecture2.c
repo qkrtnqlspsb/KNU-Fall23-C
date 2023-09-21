@@ -1,19 +1,19 @@
 #include <stdio.h>
 
 double sum(double a, double b) {
-    printf("%lf", a + b);
+    return a + b;
 }
 
 double sub(double a, double b) {
-    printf("%lf", a - b);
+    return a - b;
 }
 
 double mul(double a, double b) {
-    printf("%lf", a * b);
+    return a * b;
 }
 
 double div(double a, double b) {
-    printf("%lf", a / b);
+    return a / b;
 }
 void calculator(int selector) {
     double num1, num2;
@@ -23,19 +23,20 @@ void calculator(int selector) {
 
     printf("숫자 2를 입력하시오: ");
     scanf_s("%lf", &num2);
-
+    double result;
     if (selector == 1) {
-        sum(num1, num2);
+        result = sum(num1, num2);
     }
     else if (selector == 2) {
-        sub(num1, num2);
+        result = sub(num1, num2);
     }
     else if (selector == 3) {
-        mul(num1, num2);
+        result = mul(num1, num2);
     }
     else {
-        div(num1, num2);
+        result = div(num1, num2);
     }
+    printf("%lf", result);
 }
 int main() {
     int sel;
