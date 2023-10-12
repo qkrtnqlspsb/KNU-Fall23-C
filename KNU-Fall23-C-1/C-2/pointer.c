@@ -1,17 +1,35 @@
 #include <stdio.h>
-int main(void)
+
+void swap(int* pa, int* pb)
 {
-	int a = 3;
-	int* ptr1 = &a;
+    int c = *pa;
+    *pa = *pb;
+    *pb = c;
+}
 
-	char b = "b";
-	int* ptr2 = &b;
+void sort(int* arr, int n) {
+    for (int i = 0; i < n - 1; i++) {
+        int minIndex = i;
+        for (int j = i + 1; j < n; j++) {
+            if (arr[j] < arr[minIndex]) {
+                minIndex = j;
+            }
+        }
+        if (minIndex != i) {
+            swap(&arr[i], &arr[minIndex]);
+        }
+    }
+}
 
-	printf("%d\n", ptr1);
-	printf("%d\n", sizeof(ptr1));
+int main(void) {
+    int arr[5] = { 1, 18, 9, 6, 3 };
+    int n = 5;
 
-	printf("%d\n", ptr2);
-	printf("%d\n", sizeof(ptr2));
+    sort(arr, n);
 
-	return 0;
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
 }
