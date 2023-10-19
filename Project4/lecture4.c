@@ -79,7 +79,6 @@ int main()
     print_list(head);
 
     delete_node_first(head);
-    delete_node_first(head);
     print_list(head);
 
     delete_node_last(head);
