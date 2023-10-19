@@ -18,6 +18,8 @@ int main() {
     for (int i = 0; i < numStudent; i++) {
         sum += scores[i];
     }
-    printf("%d\n", sum);
+    printf("ÃÑÁ¡: %d\n", sum);
+    printf("Æò±Õ Á¡¼ö: %d\n", sum / numStudent);
+
     return 0;
 }
